@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body{
     background-color: #FFFFFF;
     border: 1px solid rgba(243, 241, 241, 0.6);
@@ -17,18 +24,27 @@ p,a {
     width: 1300px;
     /* padding: 50px; */
     margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     
 }
 header{
     width: 1300px;
     height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 1px solid #FFC700;
     position: fixed;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 .logo img{
@@ -38,6 +54,8 @@ header{
     
 }
 nav ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom:10px;
 }
@@ -102,6 +120,7 @@ nav a:active{
     background: #FFFFFF;
     color: black;
     padding: 5px 15px; 
+    -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1); 
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -114,6 +133,8 @@ nav a:active{
     margin-left: 5px;
     margin-right: 100px;
     text-align: center;
+    -webkit-transition: .21s ease all;
+    -o-transition: .21s ease all;
     transition: .21s ease all;
     border-radius: 5px;
     background-color: #00BAFC;
@@ -158,7 +179,12 @@ section a{
     background: #00BAFC;
     text-decoration: none;
     border-radius: 5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 8px 16px
 }
@@ -202,11 +228,23 @@ section.bet {
     font-size: 16px;
     line-height: 24px;
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .box1{
     width: 1300px;
     height: 576px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; 
 }
 .box2:hover{
@@ -225,6 +263,7 @@ section.bet {
     text-align: center;
     margin-top: 48px;
     /* border:  1px solid red; */
+    -webkit-box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -284,8 +323,14 @@ section.bet {
     
 }
 .qutti1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .qutti1 img{
@@ -314,18 +359,36 @@ section.bet {
     width: 1300px;
 }
 .qutti3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .qutti5{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .qutti7{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     
 }
@@ -333,8 +396,14 @@ section.bet {
     margin-right: 40px;
 }
 .qutti9{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .div{
@@ -350,6 +419,8 @@ section.bet {
     border-radius: 5px;
     text-decoration: none;   
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 8px 16px;
     margin-left: 43%;
@@ -428,7 +499,11 @@ input{
     width: 1300px;
     height: 338px;
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: -20px;
     background-color: black;
@@ -463,12 +538,18 @@ input{
     color: #FFFFFF;
 }
 .kom{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .quti7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 300px;
     margin-top: 10px;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
     justify-content:space-between ;
 }
 .soz{
@@ -493,11 +574,19 @@ input{
     
 }
 .rukcha{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .rasim4{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 65px;
 }
@@ -514,7 +603,6 @@ input{
 .bu:active{
     opacity: 0.4;
 }
-
 
 
 
